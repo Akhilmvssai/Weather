@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .input-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .vals {
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            height: max-content;
+            align-items: center;
+        }
+
+        .vals div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            justify-items: space-between;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label,
+        input,
+        select {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-container">
+        <h1>Enter Input Values</h1>
+        <form action="/predict" method="post">
+
+            <label for="City">Select City:</label>
+            <select name="City" required>
+                <option disabled selected value> -- Select a City -- </option>
+                <option value="coimbatore">Coimbatore</option>
+                <option value="krishnankovil">Krishnankovil</option>
+                <option value="madurai">Madurai</option>
+                <option value="sivakasi">Sivakasi</option>
+                <option value="srivilliputhur">Srivilliputhur</option>
+                <option value="virudhnagar">Virudhnagar</option>
+            </select>
+            <div class="vals">
+                <div>
+                    <label for="MinTemp">MinTemp:</label>
+                    <input type="number" name="MinTemp" required>
+                </div>
+                <div>
+                    <label for="MaxTemp">MaxTemp:</label>
+                    <input type="number" name="MaxTemp" required>
+                </div>
+                <div>
+                    <label for="WindSpeed9am">WindSpeed:</label>
+                    <input type="number" name="WindSpeed9am" required>
+                </div>
+                <div>
+                    <label for="Humidity9am">Humidity:</label>
+                    <input type="number" name="Humidity9am" required>
+                </div>
+                <div>
+                    <label for="Pressure9am">Pressure:</label>
+                    <input type="number" name="Pressure9am" required>
+                </div>
+            </div>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+
+</html>
