@@ -36,7 +36,7 @@ The steps to test the project:
 7.Test Different Inputs: Feel free to test the application with different sets of input data and cities to observe how the predictions change.
 8.Shutdown the Flask Application: Once you're done testing, go back to the terminal where the Flask server is running and stop it. You can usually do this by pressing "Ctrl + C".
 An YouTube unlisted video to show how the developed project uses by the use of webpage:
-https://youtu.be/AZS-_LPegeM?si=hX34-jDqgLMgaVlt
+https://youtu.be/RY1HM5ugckw?si=FG9IS6JQUtlnkjsu
 
 Technologies used:
 1.Python: Backend development and server-side logic.
